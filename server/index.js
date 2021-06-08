@@ -4,7 +4,7 @@ import bodyParser from 'body-parser'
 import mongoose from 'mongoose'
 import cors from 'cors'
 
-const config = dotenv.config().parsed
+const config = dotenv.config().parse
 const app = express()
 
 app.use(bodyParser.json({ limit: "30mb", extended: true }))
